@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plug-N-Play Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <button class="toggle-theme">Toggle Theme</button>
+  <button class="scroll-to-top" id="scrollToTop">↑ Top</button>
+
+  <section class="hero">
+    <h1>Pranav P Chandran</h1>
+    <div class="typed" id="typed"></div>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an AI/ML engineer with a passion for building impactful systems. Whether it's fine-tuning large models or deploying research-backed applications, I focus on combining practical execution with deep technical knowledge.
+    </p>
+  </section>
+
+  <section class="now">
+    <h2>Now</h2>
+    <p>
+      Right now, I’m exploring transformer quantization and deploying LLMs on edge devices.
+    </p>
+  </section>
+
+  <section class="technologies">
+    <h2>Technologies I Use</h2>
+    <ul>
+      <li>Python</li>
+      <li>PyTorch</li>
+      <li>TensorFlow</li>
+      <li>HuggingFace</li>
+      <li>Docker</li>
+      <li>FastAPI</li>
+      <li>LangChain</li>
+      <li>LLMs</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Teaching AI to See and Speak: Image Captioning with Transformers</h3>
+      <p>Built a computer vision + NLP system that generates natural-language captions for images using an EfficientNet encoder and Transformer decoder, trained on Flickr8k and evaluated with BLEU scores. Deployed the model with a FastAPI backend for real-time inference.</p>
+      <div class="project-buttons">
+  
+  <a href="https://github.com/pranavpc200/image_caption" target="_blank"><button>View Code</button></a>
+      </div>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Custom fine-tuned BERT model for medical entity recognition. Trained on clinical notes, improving recall by 12%.</p>
+      <div class="project-buttons">
+  <a href="https://example.com/demo2" target="_blank"><button>Live Demo</button></a>
+  <a href="https://github.com/example/project2" target="_blank"><button>View Code</button></a>
+      </div>
+    </div>
+    <div class="project">
+      <h3>Project 3</h3>
+      <p>Re-implemented the decoder part of the research paper "Attention Is All You Need" from scratch in PyTorch to deepen understanding of transformer internals.</p>
+      <div class="project-buttons">
+  <a href="https://example.com/demo3" target="_blank"><button>Live Demo</button></a>
+  <a href="https://github.com/pranavpc200/decoder_transformer" target="_blank"><button>View Code</button></a>
+      </div>
+    </div>
+  </section>
+  
+    <section class="internships">
+      <h2>Internships</h2>
+      <div class="project">
+        <h3>Data Scientist – Chisquare Labs</h3>
+        <p>Developed a Retrieval-Augmented Generation (RAG) pipeline on medical data using BioBERT + ChromaDB, and deployed it with FastAPI for real-time QA.</p>
+        <div class="project-buttons">
+          <a href="https://example.com/certificate" target="_blank"><button>Certificate</button></a>
+          <a href="https://chisquarelabs.com/" target="_blank"><button>Company Site</button></a>
+        </div>
+      </div>
+      <!-- Add more internships here if needed -->
+    </section>
+
+  <footer>
+    © 2025 Your Name. Built with love & Inter font.
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
