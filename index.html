@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Pranav P Chandran | AI Engineer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="style.css">
@@ -21,14 +22,14 @@
   <section class="about">
     <h2>About Me</h2>
     <p>
-      I'm an AI/ML engineer with a passion for building impactful systems. Whether it's fine-tuning large models or deploying research-backed applications, I focus on combining practical execution with deep technical knowledge.
+      I'm an AI Engineer working across Machine Learning, Agentic AI, and Robotics. My experience includes multi-agent AI workflows, Retrieval-Augmented Generation, ASR fine-tuning, autonomous robot navigation, SLAM, localization, mobile manipulation, and robot simulation using ROS 2, NVIDIA Isaac Sim, Gazebo, LangChain, and LangGraph.
     </p>
   </section>
 
   <section class="now">
     <h2>Now</h2>
     <p>
-      Right now, I’m exploring Speech to Text and Text to speech using Transformers.
+      Currently, I’m working on robotics simulation and autonomous navigation using ROS 2, Nav2, SLAM, localization, Gazebo, NVIDIA Isaac Sim, and mobile manipulation. I’m also building agentic AI systems using LangChain and LangGraph for workflow automation and intelligent decision-making.
     </p>
   </section>
 
@@ -36,94 +37,169 @@
     <h2>Technologies I Use</h2>
     <ul>
       <li>Python</li>
+      <li>SQL</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>C</li>
       <li>PyTorch</li>
-      <li>TensorFlow</li>
-      <li>HuggingFace</li>
-      <li>Docker</li>
-      <li>FastAPI</li>
+      <li>Hugging Face</li>
+      <li>Scikit-learn</li>
+      <li>OpenCV</li>
+      <li>ROS 2</li>
+      <li>Nav2</li>
+      <li>SLAM Toolbox</li>
+      <li>RViz</li>
+      <li>URDF</li>
+      <li>Gazebo</li>
+      <li>NVIDIA Isaac Sim</li>
+      <li>LiDAR</li>
+      <li>Localization</li>
+      <li>Path Planning</li>
+      <li>Multi-goal Navigation</li>
+      <li>Mobile Manipulation</li>
       <li>LangChain</li>
+      <li>LangGraph</li>
+      <li>RAG</li>
       <li>LLMs</li>
+      <li>Prompt Engineering</li>
+      <li>Embeddings</li>
+      <li>Vector Databases</li>
+      <li>ChromaDB</li>
+      <li>FAISS</li>
+      <li>PostgreSQL</li>
+      <li>MongoDB</li>
+      <li>Firestore</li>
+      <li>Docker</li>
+      <li>Kubernetes</li>
+      <li>Flask</li>
+      <li>React Native</li>
+      <li>Firebase</li>
+      <li>Git</li>
     </ul>
   </section>
 
   <section class="projects">
     <h2>Projects</h2>
+
     <div class="project">
-      <h3>Teaching AI to See and Speak: Image Captioning with Transformers</h3>
-      <p>Built a computer vision + NLP system that generates natural-language captions for images using an EfficientNet encoder and Transformer decoder, trained on Flickr8k and evaluated with BLEU scores. Deployed the model with a FastAPI backend for real-time inference.</p>
+      <h3>Autonomous Mobile Robot Navigation & Mobile Manipulation</h3>
+      <p>
+        Developed autonomous navigation and mobile manipulation workflows using ROS 2, Nav2, Gazebo, and NVIDIA Isaac Sim. Implemented LiDAR-based SLAM, localization, occupancy-grid mapping, obstacle avoidance, point-to-point navigation, and multi-goal navigation for mobile robots including TurtleBot3 and Clearpath mobile manipulators.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>PregPath – Multi-Agent AI Workflow Platform</h3>
+      <p>
+        Worked on an agentic AI platform using LangChain and LangGraph to orchestrate multi-agent workflows. Designed graph-based agent flows involving routing, state management, and coordinated execution of specialized AI agents for website-based task automation.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Retrieval-Augmented Generation using Mistral & FAISS</h3>
+      <p>
+        Built a local RAG pipeline using LangChain, FAISS, and Mistral through Ollama. The system retrieves relevant document chunks, augments user queries with context, and generates grounded answers using a local LLM.
+      </p>
       <div class="project-buttons">
-  
-  <a href="https://github.com/pranavpc200/image_caption" target="_blank"><button>View Code</button></a>
+        <a href="https://github.com/pranavpc200/rag_for_documents" target="_blank"><button>View Code</button></a>
       </div>
     </div>
+
     <div class="project">
-      <h3>Retrieval-Augmented Generation (RAG) using Mistral & FAISS</h3>
-      <p>This project demonstrates a complete Retrieval-Augmented Generation (RAG) pipeline implemented locally using LangChain, FAISS, and the Mistral large language model via Ollama.The pipeline retrieves contextually relevant chunks from a document (like a research paper or PDF),augments the user’s query with that context, and generates grounded answers using the local LLM.</p>
+      <h3>Image Captioning with Transformers</h3>
+      <p>
+        Designed a computer vision and NLP system that generates captions for images using an EfficientNet encoder and custom Transformer decoder. Trained on Flickr8k and evaluated using BLEU scores.
+      </p>
       <div class="project-buttons">
-  
-  <a href="https://github.com/pranavpc200/rag_for_documents" target="_blank"><button>View Code</button></a>
+        <a href="https://github.com/pranavpc200/image_caption" target="_blank"><button>View Code</button></a>
       </div>
     </div>
+
     <div class="project">
-      <h3>Sentiment Analysis</h3>
-      <p>Custom fine-tuned BERT model for medical entity recognition. Trained on clinical notes, improving recall by 12%.</p>
+      <h3>Transformer from Scratch</h3>
+      <p>
+        Re-implemented core components of the Transformer architecture from “Attention Is All You Need” in PyTorch, including attention mechanisms and decoder blocks, to build a deeper understanding of transformer internals.
+      </p>
       <div class="project-buttons">
-  <a href="https://github.com/pranavpc200/sentiment-analysis" target="_blank"><button>View Code</button></a>
+        <a href="https://github.com/pranavpc200/decoder_transformer" target="_blank"><button>View Code</button></a>
       </div>
     </div>
+
     <div class="project">
-      <h3>Re-implementation of research paper</h3>
-      <p>Re-implemented the decoder part of the research paper "Attention Is All You Need" from scratch in PyTorch to deepen understanding of transformer internals.</p>
+      <h3>Financial Sentiment Analysis with BERT</h3>
+      <p>
+        Fine-tuned BERT for sentiment classification of financial text into positive, neutral, and negative classes using Hugging Face Transformers and PyTorch.
+      </p>
       <div class="project-buttons">
-  <a href="https://github.com/pranavpc200/decoder_transformer" target="_blank"><button>View Code</button></a>
+        <a href="https://github.com/pranavpc200/sentiment-analysis" target="_blank"><button>View Code</button></a>
       </div>
     </div>
   </section>
-  
-    <section class="internships">
-      <h2>Experience</h2>
-      <div class="project">
-        <h3>AI Engineer – Gadgeon Smart Systems, Feb 2026-Present</h3>
-        <p>Developing a mobile manipulator simulation using ROS2 and NVIDIA Isaac Sim for robotic task validation.</p>
-        <p>Implemented LiDAR-based SLAM using ROS2 to generate real-time occupancy grid maps for iWhub mobile robot.</p>
-        <p>Integrated Nav2 stack for autonomous point-to-point navigation with asset-based goal naming.</p>
-        <p>Configured localization, costmaps, and path planning modules for reliable obstacle avoidance.</p>
-        <div class="project-buttons">
-          <a href="https://www.gadgeon.com/" target="_blank"><button>Company Site</button></a>
-        </div>
-      </div>
-      
-      <h2></h2>
-      <div class="project">
-        <h3>AI Intern – Gadgeon Smart Systems Nov 2025 - Feb 2026</h3>
-        <p>Fine-tuned an Automatic Speech Recognition (ASR) model on Malayalam + English bilingual datasets.</p>
-        <p>Built preprocessing pipelines for dataset cleaning, normalization, tokenization, and augmentation.</p>
-        <p>Fine-tuned an open-source Jivi ASR model from Huggingface, improving transcription quality for code-mixed speech.</p>
-        <p>Evaluated model performance using WER/CER metrics and optimized hyperparameters.</p>
-        <div class="project-buttons">
-          
-          <a href="https://www.gadgeon.com/" target="_blank"><button>Company Site</button></a>
-        </div>
-      </div>
 
-      <h2></h2>
-      <div class="project">
-        <h3>Data Scientist – Chisquare Labs, Feb - April 2025</h3>
-        <p>Developed a Retrieval-Augmented Generation (RAG) pipeline on medical data using BioBERT + ChromaDB, and deployed it with FastAPI for real-time QA.</p>
-        <div class="project-buttons">
-          <a href="https://drive.google.com/drive/folders/1GwSaMOnbZukz2B-k0_1tNHMTiHFDqWa_" target="_blank"><button>Certificate</button></a>
-          <a href="https://chisquarelabs.com/" target="_blank"><button>Company Site</button></a>
-        </div>
+  <section class="internships">
+    <h2>Experience</h2>
+
+    <div class="project">
+      <h3>AI Engineer – Gadgeon Smart Systems, Nov 2025 – Present</h3>
+      <p>Joined as an AI Intern for 3 months and continued as an AI Engineer, contributing to ASR fine-tuning, agentic AI workflows, and robotics simulation.</p>
+      <p>Worked on PregPath, an agentic AI platform using LangChain and LangGraph to orchestrate multi-agent workflows.</p>
+      <p>Designed graph-based agent flows involving routing, state management, and coordinated execution of specialized AI agents.</p>
+      <p>Built GenAI-powered workflows using LLMs, prompt engineering, embeddings, and retrieval techniques to support business use cases.</p>
+      <p>Fine-tuned an Automatic Speech Recognition model on Malayalam-English bilingual and code-mixed speech datasets.</p>
+      <p>Built preprocessing pipelines for audio cleaning, text normalization, tokenization, and data augmentation.</p>
+      <p>Evaluated ASR model performance using WER/CER metrics and optimized hyperparameters.</p>
+      <p>Developed mobile manipulator simulations using ROS 2 and NVIDIA Isaac Sim for robotic task validation.</p>
+      <p>Implemented LiDAR-based SLAM using ROS 2 and SLAM Toolbox to generate real-time occupancy grid maps.</p>
+      <p>Integrated Nav2 for autonomous navigation, obstacle avoidance, point-to-point navigation, and multi-goal navigation.</p>
+      <p>Tuned localization, costmaps, planners, controllers, and recovery behavior parameters for reliable navigation.</p>
+      <p>Simulated robots including TurtleBot3 and Clearpath mobile manipulators in Gazebo and Isaac Sim.</p>
+      <div class="project-buttons">
+        <a href="https://www.gadgeon.com/" target="_blank"><button>Company Site</button></a>
       </div>
-      
-      
-      <!-- Add more internships here if needed -->
-    </section>
+    </div>
+
+    <div class="project">
+      <h3>AI Engineer, Self-Employed – Rayna Tours, Jul 2025 – Oct 2025</h3>
+      <p>Developed a multi-agent AI analytics platform using LLMs, LangChain, and LangGraph to automate business workflows and decision support.</p>
+      <p>Built agent-based systems for data analysis, trend identification, and actionable business recommendations across travel packages and service offerings.</p>
+      <p>Implemented AI-driven insights for pricing optimization, inventory planning, demand analysis, and operational efficiency improvements.</p>
+      <div class="project-buttons">
+        <a href="https://www.raynatours.com/" target="_blank"><button>Client Website</button></a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Data Science Intern – Chisquare Labs, Feb 2025 – Apr 2025</h3>
+      <p>Built a Retrieval-Augmented Generation pipeline to query unstructured medical data using LLMs and semantic search.</p>
+      <p>Applied recursive and semantic chunking with BioBERT to improve retrieval accuracy and context selection.</p>
+      <p>Generated dense embeddings and performed top-k retrieval using ChromaDB and cosine similarity.</p>
+      <p>Integrated the pipeline into a Flask API with a simple front-end for real-time medical QA.</p>
+      <div class="project-buttons">
+        <a href="https://drive.google.com/drive/folders/1GwSaMOnbZukz2B-k0_1tNHMTiHFDqWa_" target="_blank"><button>Certificate</button></a>
+        <a href="https://chisquarelabs.com/" target="_blank"><button>Company Site</button></a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Generative AI Engineer Intern – Euron EngageSphere Technology Pvt. Ltd, Aug 2024 – Jan 2025</h3>
+      <p>Led 3 client-facing Generative AI proof-of-concept projects involving LLMs, prompt engineering, agentic workflows, and business automation.</p>
+      <p>Built multi-agent AI workflows with specialized agents for task routing, reasoning, data processing, and automated decision support.</p>
+      <p>Developed AI-powered analytics modules combining LLMs, data visualization, classical ML, and deep learning techniques to generate business insights.</p>
+    </div>
+
+    <div class="project">
+      <h3>Machine Learning Intern – Bytestrone Pvt Ltd, May 2024</h3>
+      <p>Led a team to design and deploy an NLP chatbot using BERT for enterprise company-data question answering.</p>
+      <p>Built text preprocessing pipelines for cleaning, tokenization, and model-ready dataset preparation.</p>
+      <p>Worked with Python, Hugging Face Transformers, NLP, REST API integration, and Agile development practices.</p>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Your Name. Built with love & Inter font.
+    © 2026 Pranav P Chandran. Built with love & Inter font.
   </footer>
 
   <script src="script.js" defer></script>
 </body>
 </html>
+```
