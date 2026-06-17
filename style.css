@@ -1,8 +1,10 @@
+```css
 :root {
   --bg: #0f0f0f;
   --accent: #38bdf8;
   --light: #f3f4f6;
   --muted: #9ca3af;
+  --card: #1f2937;
   --gradient: linear-gradient(135deg, #38bdf8, #818cf8);
 }
 
@@ -11,6 +13,7 @@
   --accent: #3b82f6;
   --light: #111827;
   --muted: #6b7280;
+  --card: #e5e7eb;
 }
 
 * {
@@ -43,7 +46,7 @@ canvas#bg {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 800;
   background: var(--gradient);
   -webkit-background-clip: text;
@@ -78,7 +81,8 @@ h2 {
   color: var(--accent);
 }
 
-.about p, .now p {
+.about p,
+.now p {
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--muted);
@@ -100,48 +104,46 @@ h2 {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.projects {
+.projects,
+.internships {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .project {
-  background: #1f2937;
+  background: var(--card);
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
-
-[data-theme="light"] .project {
-  background: #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
 .project h3 {
   color: var(--accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
 }
 
 .project p {
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
 }
 
 .project-buttons {
   margin-top: 1rem;
 }
 
-.project-buttons span {
-}
-
 .project-buttons a {
   display: inline-block;
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
   text-decoration: none;
 }
 
@@ -154,8 +156,11 @@ h2 {
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.3s;
 }
+
+.project-buttons button:hover {
+  transform: scale(1.05);
 }
 
 .scroll-to-top {
@@ -174,13 +179,6 @@ h2 {
   display: none;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.875rem;
-  color: var(--muted);
-}
-
 .toggle-theme {
   position: fixed;
   top: 1rem;
@@ -195,3 +193,39 @@ footer {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   z-index: 999;
 }
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero .typed {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 3rem 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .project {
+    padding: 1.2rem;
+  }
+
+  .toggle-theme {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+```
